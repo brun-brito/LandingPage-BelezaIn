@@ -1,0 +1,375 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: url('midias/fotos/Capa-evento.PNG') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    overflow: hidden;
+    height: 70vh;
+}
+
+.hero-content {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #9a5468;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    color: #f2f2f2;
+    margin-bottom: 10px;
+}
+
+.action-content {
+    margin-top: 70px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background: #9a5468;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+    gap: 8px;
+    font-size: 1.1em;
+    margin: 5px;
+}
+
+.cta-button:hover {
+    background: #f4b6c2;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 1) 100%);
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 80vh;
+    }
+
+    .hero-content {
+        margin-top: -40px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-content p {
+        font-size: 1.5em;
+    }
+
+    .action-content {
+        margin-top: 30px;
+        top: 65%;
+    }
+
+    .cta-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
+
+.cta-button.secondary {
+    background: #3d3d3d;
+    color: #ffffff;
+}
+
+.cta-button.secondary:hover {
+    background: #000;
+}
+
+.instagram-button {
+    background: #9a5468;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.instagram-button i {
+    font-size: 1.5em;
+}
+
+.instagram-button:hover {
+    background: #f4b6c2;
+}
+
+.whatsapp-button {
+    background: #25D366;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 1.1em;
+}
+
+.whatsapp-button:hover {
+    background: #128C7E;
+    color: white;
+}
+
+#course-schedule {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: left;
+}
+
+#course-schedule h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.schedule-day {
+    margin-bottom: 30px;
+}
+
+.schedule-day h3 {
+    font-size: 1.8em;
+    color: #9a5468;
+    margin-bottom: 15px;
+}
+
+.schedule-day ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.schedule-day ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.additional-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.additional-images img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .additional-images {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .additional-images img {
+        max-width: 80%;
+    }
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+section p, section ul {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+#instructor img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+    width: 40%;
+}
+
+#instructor p {
+    font-size: 1.1em;
+}
+
+#checkout {
+    background: #f4f4f4;
+    padding: 30px;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto 50px;
+    border-radius: 10px;
+}
+
+.img-curso {
+    width: 100%; /* Tamanho padrão para dispositivos móveis */
+    max-width: 400px; /* Limita o tamanho da imagem */
+    display: block;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .img-curso {
+        width: 50%; /* Diminui a imagem em telas maiores (como desktops) */
+    }
+}
+
+
+#checkout h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#checkout p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#location-photos {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+#location-photos h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.photo-gallery img {
+    width: calc(20% - 10px);
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.testimonial-videos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.video-container {
+    flex: 1;
+    min-width: 300px;
+    max-width: 560px;
+}
+
+@media (max-width: 768px) {
+    .video-container video {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+footer ul li a:hover {
+    color: #9a5468;
+}
+
+footer img {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .photo-gallery img {
+        width: calc(50% - 10px);
+    }
+
+    #instructor img {
+        width: 100%;
+    }
+}
